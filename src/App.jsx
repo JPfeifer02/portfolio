@@ -9,15 +9,15 @@ function App() {
     <div>
       <Navbar />
 
-      <section id="about" style={{ padding: '5rem 2rem' }}>
+      <section id="about" style={{ padding: '1rem 2rem' }}>
         <About />
       </section>
 
-      <section id="projects" style={{ padding: '5rem 2rem' }}>
+      <section id="projects" style={{ padding: '1rem 2rem' }}>
         <Projects />
       </section> 
 
-      <section id="contact" style={{ padding: '5rem 2rem' }}>
+      <section id="contact" style={{ padding: '1rem 2rem' }}>
         <Contact />
       </section>
 

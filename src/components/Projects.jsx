@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 function Projects() {
   return (
     <section className="max-w-4xl mx-auto p-6">
-      <h2 className="text-3xl font-semibold mb-6">Projects</h2>
+      <h2 className="text-3xl font-semibold mb-6 text-center">Projects</h2>
       <ul className="space-y-6 list-disc list-inside text-lg">
         <li>
           <strong>Portfolio Website</strong> – My personal portfolio site showcasing my projects and skills. Built with React.{" "}
@@ -31,7 +31,19 @@ function Projects() {
         </li>
         <li>
           <strong>Piano</strong> – A personal music project focused on piano compositions and practice.
-          {/* You can add links or details here later */}
+          <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <iframe
+              src="https://www.youtube.com/embed/j99GrEE-Ybw"
+              className="w-full h-64 rounded-lg shadow-md"
+              allowFullScreen
+            ></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/RUW4UWliAtg"
+              className="w-full h-64 rounded-lg shadow-md"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </li>
       </ul>
     </section>
