@@ -1,16 +1,29 @@
-import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
-      <Header />
-      <About />
-      <Projects />
-      <Contact />
+      <Navbar />
+
+      <section id="about" style={{ padding: '5rem 2rem' }}>
+        <About />
+      </section>
+
+      <section id="projects" style={{ padding: '5rem 2rem' }}>
+        <Projects />
+      </section> 
+
+      <section id="contact" style={{ padding: '5rem 2rem' }}>
+        <Contact />
+      </section>
+
+      <Footer />
     </div>
   );
 }
+
 export default App;

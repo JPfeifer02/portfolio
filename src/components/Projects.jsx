@@ -11,7 +11,9 @@ function Projects() {
           <strong>Macro</strong> – A full-stack app to track calories. Built with React, Node.js, PostgreSQL.
           [<a href="https://github.com/jpfeifer02/foodlogger" target="_blank">GitHub</a>]
         </li>
-
+        <li>
+            <strong>Piano</strong>
+        </li>
         {/* Add more projects here */}
       </ul>
     </section>
