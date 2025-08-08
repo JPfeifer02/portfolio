@@ -1,17 +1,63 @@
-body {
-  font-family: sans-serif;
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #bb86fc;
+  --font-main: 'Fira Code', monospace;
+  --font-alt: 'Inter', sans-serif;
+
+}
+
+html, body {
   max-width: 100vw;
   margin: auto;
   padding: 1rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Fira Code', monospace;
+  animation: fadeIn 0.5s ease-in-out;    /* fade-in effect for pages */
 }
-h1, h2 {
-  color: #333;
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+h1 {
+  color: var(--text-color);
 }
 a {
-  color: blue;
+  color: var(--accent-color);
+}
+a:hover {
+  text-decoration: underline;
 }
 html {
   scroll-behavior: smooth;
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--accent-color);
+  margin: 1rem 0;
+  opacity: 0.3;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  font-size: 1rem;
+}
+.links a {
+  margin-left: 1.5rem;
 }
 /* HELPFUL DEBUG */
 

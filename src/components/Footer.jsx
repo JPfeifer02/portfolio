@@ -14,7 +14,7 @@ const styles = {
     marginTop: '4rem',
     padding: '1rem',
     textAlign: 'center',
-    backgroundColor: '#f0f0f0',
-    color: '#555',
+    backgroundColor: 'var(--accent-color)',
+    color: 'var(--text-color)',
   }
 };

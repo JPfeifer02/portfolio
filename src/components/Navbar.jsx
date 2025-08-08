@@ -18,7 +18,7 @@ function NavLink({ href, label }) {
             href={href}
             style={{ 
                 ...styles.link, 
-                color: hovered ? 'blue' : '#333',
+                color: hovered ? 'var(--link-color)' : 'var(--text-color)'
             }}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
@@ -34,14 +34,12 @@ const styles = {
     justifyContent: 'center',
     gap: '4rem',
     padding: '1rem',
-    backgroundColor: '#f0f0f0',
+    backgroundColor: 'var(--accent-color)',
     position: 'sticky',
     top: 0,
     zIndex: 1000,
   },
   link: {
-    color: '#333',
-    fontWeight: 'bold',
     transition: 'color .2s ease',
   }
 };

@@ -6,7 +6,7 @@ function Projects() {
       <h2 className="text-3xl font-semibold mb-6 text-center">Projects</h2>
       <ul className="space-y-6 list-disc list-inside text-lg">
         <li>
-          <strong>Portfolio Website</strong> – My personal portfolio site showcasing my projects and skills. Built with React.{" "}
+          <strong>Portfolio Website</strong> – My personal portfolio site showcasing my projects and skills. Built with React and Vite.{" "}
           <a
             href="https://github.com/jpfeifer02/portfolio"
             target="_blank"
