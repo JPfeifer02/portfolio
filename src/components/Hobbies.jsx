@@ -6,28 +6,43 @@ const hobbies = [
   {
     title: "Piano",
     description: "I enjoy playing classical and contemporary pieces on the piano.",
-    image: "/public/Hobbies/Ballade4.MOV"
+    image: "/Hobbies/Ballade4.MOV"
   },
   {
     title: "Pickleball",
     description: "I play competitive pickleball on weekends and enjoy the social aspect of the game.",
-    image: "/public/Hobbies/Pickleball.jpg"
+    image: "/Hobbies/Pickleball.jpg"
   },
   {
     title: "Lifting",
     description: "I enjoy weightlifting and strength training to stay fit.",
-    //image: "/public/Hobbies/Lifting.jpg"
+    //image: "/Hobbies/Lifting.jpg"
   },
   {
     title: "Cooking",
     description: "I love experimenting with new recipes and cooking techniques in the kitchen.",
-    image: "/public/Hobbies/Steak.jpg"
+    image: "/Hobbies/Steak.jpg"
   },
   {
     title: "Farming",
     description: "I help out on my family's farm, learning about sustainable agriculture and animal care.",
-    image: "/public/Hobbies/Haybales.jpg"
+    image: "/Hobbies/Haybales.jpg"
   },
+  {
+    title: "Dirt Biking",
+    description: "I enjoy riding dirt bikes on trails and motocross tracks.",
+    image: "/Hobbies/Dirtbike.jpg"
+  },
+  {
+    title: "Volleyball",
+    description: "I love to play volleyball recreationally and competitively. The image is of my winning intramural volleyball team.",
+    image: "/Hobbies/Volleyball.jpeg"
+  },
+  {
+    title: "Skiing",
+    description: "Being from Minnesota, I enjoy skiing during the winter months.",
+    image: "/Hobbies/Skiing.jpg"
+  }
 ];
 
 function Hobbies() {
@@ -56,8 +71,9 @@ function Hobbies() {
                 alt={hobby.title} 
                 className="w-full h-48 object-cover rounded mb-4"
                 style={{ display: hobby.image ? 'block' : 'none' }}
+
             />
-            <h3 className="text-xl font-semibold mb-2">{hobby.title}</h3>
+            <h3 className="text-xl mb-2">{hobby.title}</h3>
           </div>
         ))}
       </div>

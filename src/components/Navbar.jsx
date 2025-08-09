@@ -6,6 +6,7 @@ export default function Navbar() {
     <nav style={styles.nav}> 
       <NavLink href="#about" label="About" />
       <NavLink href="#projects" label="Projects" />
+      <NavLink href="#hobbies/interests" label="Hobbies/Interests"/>
       <NavLink href="#contact" label="Contact" />
     </nav>
   );
@@ -36,7 +37,7 @@ const styles = {
     padding: '1rem',
     backgroundColor: 'var(--accent-color)',
     position: 'sticky',
-    top: 0,
+    top: -10,
     zIndex: 1000,
   },
   link: {
